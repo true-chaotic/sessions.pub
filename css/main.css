@@ -175,8 +175,20 @@ html {
     line-height: 1.1;
 }
 
+.card__unavailable-text_with-note {
+    padding-bottom: 1em;
+}
+
 .card_unavailable {
     color: #9b9b9b;
+}
+
+.card__note {
+    font-weight: normal;
+}
+
+.nobr {
+    white-space: nowrap;
 }
 
 .contact {
