@@ -28,6 +28,12 @@ html {
     margin-top: 2.25em;
 }
 
+.layout__text {
+    max-width: 35em;
+    margin: 0 auto 8em;
+    font-weight: normal;
+}
+
 .layout__footer {
     margin-top: 5em;
 }
@@ -261,4 +267,26 @@ html {
 
 .contact__link:hover {
     color: #f69901;
+}
+
+.text a {
+    color: inherit;
+    transition: color 0.2s;
+}
+
+.text a:hover {
+    color: #f69901;
+}
+
+.text ul {
+    list-style: none;
+    padding-left: 2em;
+}
+
+.text li {
+    margin: 0.5em 0;
+}
+
+.text__hint {
+    font-size: 0.8em;
 }
