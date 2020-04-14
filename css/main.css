@@ -135,7 +135,6 @@ html {
 .card__closest {
     display: block;
     color: #3cab3d;
-    text-transform: uppercase;
 }
 
 .card__closest::after {
@@ -187,6 +186,26 @@ html {
 
 .card_unavailable {
     color: #9b9b9b;
+}
+
+.card__enter {
+    margin: 1.5em 0 1em;
+}
+
+.card__enter-button {
+    display: inline-block;
+    border-radius: 9px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(#0c7264, #064940);
+    background-color: #064940;
+    padding: 1em;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.5), inset 0 2px 3px 0 rgba(255, 255, 255, 0.4);
+}
+
+.card__notes {
+    margin-top: 2em;
+    font-size: 0.8em;
 }
 
 .card__note {
