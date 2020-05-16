@@ -309,3 +309,11 @@ html {
 .text__hint {
     font-size: 0.8em;
 }
+
+.tunes {}
+.tunes__heading {
+    margin-bottom: 0.5em;
+}
+.tunes__list {
+    margin-top: 0;
+}
