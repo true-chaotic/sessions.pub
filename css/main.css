@@ -317,3 +317,16 @@ html {
 .tunes__list {
     margin-top: 0;
 }
+
+.tunes__new {
+    text-decoration: none;
+    position: relative;
+}
+
+.tunes__new::before {
+    position: absolute;
+    content: '+';
+    font-family: monospace;
+    margin-left: -1.2em;
+    margin-top: 0.2em;
+}
