@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css?3">
+    <link rel="stylesheet" href="/css/main.css?4">
     <meta name="theme-color" content="#064940">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 </head>
@@ -18,18 +18,50 @@
             </h1>
         </header>
         <main class="layout__main">
-            <div class="cards">
-                <div class="cards__item">
+            <ul class="cards">
+                <li class="cards__item">
                     <div class="card">
                         <p class="card__text">
-                            <span class="card__closest">Ближайший Zoom-сейшн</span>
-                            <time class="card__when" datetime="2020-07-17 20:00">
+                            <span class="card__closest">Ближайший сейшн</span>
+                            <time class="card__when" datetime="2020-07-26 15:00">
                                 <span class="card__date">
-                                    <span class="card__day">17</span>
+                                    <span class="card__day">26</span>
                                     <span class="card__month">июля</span>
                                 </span>
                                 <span class="card__at-time">
-                                    <span class="card__punctuation">(</span>пятница<span class="card__punctuation">)</span>
+                                    <span class="card__punctuation">(</span>воскресенье<span class="card__punctuation">)</span>
+                                    <span class="card__at">в</span>
+                                    <span class="card__time">15:00</span>
+                                </span>
+                            </time>
+                        </p>
+                        <div class="card__notes card__notes_plain">
+                            <p class="card__note">
+                                Точное место: <a title="Google Maps" class="card__address-link" href="https://goo.gl/maps/RpnpGQiNQoAxKwTK8">55.70825° N, 37.55129° E.</a>
+                            </p>
+                            <p class="card__note">
+                                3&nbsp;минуты пешком от&nbsp;метро &laquo;Воробьевы горы&raquo;. Беседка на&nbsp;берегу маленького пруда на&nbsp;склоне холма. Выходите из&nbsp;метро, поднимаетесь чуть наверх и&nbsp;сворачиваете в&nbsp;лес.
+                            </p>
+                            <p class="card__note">
+                                Беседка крытая, дождь там не&nbsp;помеха. Людей практически нет, очень живописно и&nbsp;спокойно.
+                            </p>
+                            <p class="card__note">
+                                Организатор &mdash; <a class="card__address-link card__address-link_tg" href="https://t.me/tainira">Tainira</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cards__item">
+                    <div class="card">
+                        <p class="card__text">
+                            <span class="card__closest">Ближайший Zoom-сейшн</span>
+                            <time class="card__when" datetime="2020-07-29 20:00">
+                                <span class="card__date">
+                                    <span class="card__day">29</span>
+                                    <span class="card__month">июля</span>
+                                </span>
+                                <span class="card__at-time">
+                                    <span class="card__punctuation">(</span>среда<span class="card__punctuation">)</span>
                                     <span class="card__at">в</span>
                                     <span class="card__time">20:00</span>
                                 </span>
@@ -48,8 +80,8 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </main>
         <footer class="layout__footer">
             <address class="contact">

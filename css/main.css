@@ -50,6 +50,7 @@ html {
 .cards {
     text-align: center;
     margin: 0 -0.6em;
+    padding: 0;
 }
 
 .cards__item {
@@ -163,6 +164,17 @@ html {
     transition: color 0.2s;
 }
 
+.card__address-link_tg::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(/i/telegram.svg);
+    background-size: cover;
+    vertical-align: middle;
+    margin: 1px 3px 3px;
+}
+
 .card__address-link:hover {
     color: #f69901;
 }
@@ -206,6 +218,11 @@ html {
 .card__notes {
     margin-top: 2em;
     font-size: 0.8em;
+}
+
+.card__notes_plain {
+    text-align: left;
+    font-size: 0.9em;
 }
 
 .card__note {
