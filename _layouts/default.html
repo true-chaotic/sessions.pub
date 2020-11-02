@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{% if product.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}?v=1">
+    <meta name="theme-color" content="#064940">
+    <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" type="image/x-icon" />
+    {% feed_meta %}
+  </head>
+  <body class="layout">
+  <div class="layout__container">
+    <header class="layout__header">
+      <h1 class="logo">
+        Ирландский сейшн в Москве
+      </h1>
+    </header>
+    <main class="layout__main">
+    {{ content }}
+    </main>
+    <footer class="layout__footer">
+      <address class="contact">
+        <span class="contact__label">Связаться с организатором</span>
+        <ul class="contact__methods">
+          <li class="contact__method"><span title="Телеграм" class="contact__name contact__name_tg">Телеграм:</span> @a_samokhin</li>
+          <li class="contact__method"><span title="Эл. почта" class="contact__name contact__name_email">Эл. почта:</span> <a class="contact__link" href="mailto:alex@sessions.pub">alex@sessions.pub</a></li>
+        </ul>
+        <p class="contact__suggest">Предложить идеи по развитию проекта можно на&nbsp;<a class="contact__link" href="https://github.com/true-chaotic/sessions.pub/issues">GitHub</a></p>
+      </address>
+    </footer>
+  </div>
+  </body>
+</html>

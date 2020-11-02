@@ -1,0 +1,59 @@
+<div class="card">
+    <p class="card__text">
+        {% if include.session.past %}
+        <span class="card__past">Прошедший {% if include.session.type == "zoom" %}Zoom-{% endif %}сейшн</span>
+        {% else %}
+        <span class="card__closest">Ближайший {% if include.session.type == "zoom" %}Zoom-{% endif %}сейшн</span>
+        {% endif%}
+        <time class="card__when" datetime="{{ include.session.date | date_to_xmlschema }}">
+            <span class="card__date">
+                <span class="card__day">{{ include.session.date | date: '%-d' }}</span>
+                {% assign month = include.session.date | date: "%-m"%}
+                <span class="card__month">
+                    {% case month %}
+                      {% when '1' %}января
+                      {% when '2' %}февраля
+                      {% when '3' %}марта
+                      {% when '4' %}апреля
+                      {% when '5' %}мая
+                      {% when '6' %}июня
+                      {% when '7' %}июля
+                      {% when '8' %}августа
+                      {% when '9' %}сентября
+                      {% when '10' %}октября
+                      {% when '11' %}ноября
+                      {% when '12' %}декабря
+                    {% endcase %}
+                </span>
+            </span>
+            {% assign day = include.session.date | date: "%w" %}
+            <span class="card__at-time">
+                <span class="card__punctuation">(</span>{% case day %}
+                    {% when '0' %}воскресенье
+                    {% when '1' %}понедельник
+                    {% when '2' %}вторник
+                    {% when '3' %}среда
+                    {% when '4' %}четверг
+                    {% when '5' %}пятница
+                    {% when '6' %}суббота
+                {% endcase %}<span class="card__punctuation">)</span>
+                <span class="card__at">в</span>
+                <span class="card__time">{{ include.session.date | date: "%R"  }}</span>
+            </span>
+        </time>
+    </p>
+    {% if include.session.type == "zoom" %}
+    <div class="card__enter">
+        <a class="card__enter-button" href="https://us04web.zoom.us/j/3923897848?pwd=SHAzL1kwTmcyYm1PdkdzNVNLNUZ6dz09">Присоединиться</a>
+    </div>
+    <div class="card__notes">
+        <p class="card__note">
+            Для входа нужно установить <a href="https://zoom.us/download" class="card__address-link">клиент</a>.
+        </p>
+        <p class="card__note">
+            Пароль в ссылке на конференцию или цифра 1, также включен &laquo;Зал&nbsp;ожидания&raquo;.
+            Cм. <a class="card__address-link" href="/slow/">раздел о Zoom-сейшнах</a>.
+        </p>
+    </div>
+    {% endif %}
+</div>

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html {
+  min-height: 100%;
+}
+
+.layout {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: radial-gradient(circle at 52% 50%, #0c7264, #064940 92%);
+  background-repeat: no-repeat;
+  background-color: #064940;
+  color: white;
+  font-weight: bold;
+  padding: 2em 1.6em;
+  min-height: 100%;
+}
+
+.layout__container {
+
+}
+
+.layout__header {
+  width: 204px;
+  margin: 0 auto;
+}
+
+.layout__main {
+  margin-top: 2.25em;
+}
+
+.layout__text {
+  max-width: 35em;
+  margin: 0 auto 8em;
+  font-weight: normal;
+}
+
+.layout__footer {
+  margin-top: 5em;
+}
+
+.logo {
+  width: 204px;
+  height: 60px;
+  margin: 0;
+  background-image: url(../i/logo.svg);
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.cards {
+  text-align: center;
+  margin: 0 -0.6em;
+  padding: 0;
+}
+
+.cards__item {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 320px;
+  text-align: initial;
+  margin: 0 0.6em 1em;
+}
+
+.card {
+  text-align: center;
+  border-radius: 9px;
+  box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  color: #037161;
+  padding: 1.56em;
+}
+
+.card__heading {
+  margin-top: 0;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.card__plain-text {
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.card__plain-text a {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.card__plain-text a:hover {
+  color: #f69901;
+}
+
+.card__when {
+  display: block;
+  margin-top: 0.1875em;
+}
+
+.card__date {
+  color: #f69901;
+}
+
+.card__day {
+  display: block;
+  font-size: 5.625em;
+}
+
+.card__month {
+  display: block;
+  font-size: 2.6875em;
+  margin-top: -0.5em;
+}
+
+.card__at-time {
+  display: block;
+  font-size: 1.25em;
+  margin: 0.3em 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.card__punctuation {
+  display: none;
+}
+
+.card__at {
+  display: none;
+}
+
+.card__time::before {
+  content: '/ ';
+}
+
+.card__closest {
+  display: block;
+  color: #3cab3d;
+}
+
+.card__closest::after {
+  content: ':';
+}
+
+.card__past {
+  display: block;
+  color: #666666;
+}
+
+.card__where {
+  margin-top: 1.25em;
+  display: block;
+}
+
+.card__place {
+  display: block;
+  font-size: 1.75em;
+}
+
+.card__address {
+  margin-top: 0.2em;
+  display: block;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.card__address-link {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.card__address-link_tg::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-image: url(../i/telegram.svg);
+  background-size: cover;
+  vertical-align: middle;
+  margin: 1px 3px 3px;
+}
+
+.card__address-link:hover {
+  color: #f69901;
+}
+
+.card__unavailable-text {
+  background-image: url(../i/triskelion.svg);
+  background-size: 96px 96px;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+
+  margin: 0;
+  padding-top: 8em;
+  padding-bottom: 3em;
+  font-size: 1.25em;
+  line-height: 1.1;
+}
+
+.card__unavailable-text_with-note {
+  padding-bottom: 1em;
+}
+
+.card_unavailable {
+  color: #9b9b9b;
+}
+
+.card__enter {
+  margin: 1.5em 0 1em;
+}
+
+.card__enter-button {
+  display: inline-block;
+  border-radius: 9px;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(#0c7264, #064940);
+  background-color: #064940;
+  padding: 1em;
+  box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.5), inset 0 2px 3px 0 rgba(255, 255, 255, 0.4);
+}
+
+.card__notes {
+  margin-top: 2em;
+  font-size: 0.8em;
+}
+
+.card__notes_plain {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.card__note {
+  font-weight: normal;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.contact {
+  font-style: normal;
+  text-align: center;
+}
+
+.contact__label {
+  font-size: 1.125em;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+
+.contact__methods,
+.contact__method {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.contact__methods {
+  margin: 0 2em 0 1em;
+}
+
+.contact__method {
+  margin: 0.5em 1em;
+}
+
+.contact__name {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.25em;
+}
+
+.contact__suggest {
+  margin-top: 2em;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+@media (max-width: 350px) {
+  .contact__methods {
+    margin: 0;
+  }
+
+  .contact__name {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.contact__name_tg {
+  background-image: url(../i/telegram.svg);
+}
+
+.contact__name_email {
+  background-image: url(../i/mail.svg);
+}
+
+.contact__link {
+  color: white;
+  transition: color 0.2s;
+}
+
+.contact__link:hover {
+  color: #f69901;
+}
+
+.text a {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.text a:hover {
+  color: #f69901;
+}
+
+.text ul {
+  list-style: none;
+  padding-left: 2em;
+}
+
+.text li {
+  margin: 0.5em 0;
+}
+
+.text__hint {
+  font-size: 0.8em;
+}
+
+.tunes {}
+.tunes__heading {
+  margin-bottom: 0.5em;
+}
+.tunes__list {
+  margin-top: 0;
+}
+
+.tunes__new {
+  text-decoration: none;
+  position: relative;
+}
+
+.tunes__new::before {
+  position: absolute;
+  content: '+';
+  font-family: monospace;
+  margin-left: -1.2em;
+  margin-top: 0.2em;
+}
