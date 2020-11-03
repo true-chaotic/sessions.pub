@@ -20,4 +20,4 @@ title: "Подписка на обновления"
 У сайта есть Atom-лента, которую можно добавить в RSS-читалку, например
  - [feedly](https://feedly.com/)
  - [RSS Reader](https://play.google.com/store/apps/details?id=com.madsvyat.simplerssreader&hl=ru_RU) для Android
- - [Blogtrottr](https://blogtrottr.com/) &mdash; отправка новостей с ленты на почту
+ - [Blogtrottr](https://blogtrottr.com/?subscribe={{ site.url }}/feed.xml) &mdash; отправка новостей с ленты на почту
