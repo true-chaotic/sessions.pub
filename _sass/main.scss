@@ -84,6 +84,10 @@ html {
   font-weight: normal;
 }
 
+.card__plain-text h2 {
+  margin-top: 0;
+}
+
 .card__plain-text a {
   color: inherit;
   transition: color 0.2s;

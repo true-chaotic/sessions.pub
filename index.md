@@ -14,6 +14,18 @@ layout: default
          {% endunless %}   
         {% endif %}
     {% endfor %}
+    {% for post in site.categories.news %}
+        {% unless post.past %}
+        {% assign have_posts = true %}
+            <li class="cards__item">
+                <div class="card">
+                    <div class="card__plain-text">
+                        {{ post.content }}
+                    </div>
+                </div>
+            </li>
+        {% endunless %}
+    {% endfor %}
 {% endcapture %}
     
 {% if have_posts %}  
