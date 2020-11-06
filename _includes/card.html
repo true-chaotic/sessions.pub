@@ -43,17 +43,25 @@
         </time>
     </p>
     {% if include.session.type == "zoom" %}
-    <div class="card__enter">
-        <a class="card__enter-button" href="https://us04web.zoom.us/j/3923897848?pwd=SHAzL1kwTmcyYm1PdkdzNVNLNUZ6dz09">Присоединиться</a>
-    </div>
-    <div class="card__notes">
-        <p class="card__note">
-            Для входа нужно установить <a href="https://zoom.us/download" class="card__address-link">клиент</a>.
-        </p>
-        <p class="card__note">
-            Пароль в ссылке на конференцию или цифра 1, также включен &laquo;Зал&nbsp;ожидания&raquo;.
-            Cм. <a class="card__address-link" href="/slow/">раздел о Zoom-сейшнах</a>.
-        </p>
-    </div>
+    {% if include.session.past %}
+        <div class="card__notes">
+            <p class="card__note">
+                Cм. <a class="card__address-link" href="/slow/">раздел о Zoom-сейшнах</a>.
+            </p>
+        </div>
+    {% else %}
+        <div class="card__enter">
+            <a class="card__enter-button" href="https://us04web.zoom.us/j/3923897848?pwd=SHAzL1kwTmcyYm1PdkdzNVNLNUZ6dz09">Присоединиться</a>
+        </div>
+        <div class="card__notes">
+            <p class="card__note">
+                Для входа нужно установить <a href="https://zoom.us/download" class="card__address-link">клиент</a>.
+            </p>
+            <p class="card__note">
+                Пароль в ссылке на конференцию или цифра 1, также включен &laquo;Зал&nbsp;ожидания&raquo;.
+                Cм. <a class="card__address-link" href="/slow/">раздел о Zoom-сейшнах</a>.
+            </p>
+        </div>
+    {% endif %}
     {% endif %}
 </div>
