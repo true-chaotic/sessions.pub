@@ -36,11 +36,12 @@ title: "Zoom-сейшны"
         <li><a href="https://vimeo.com/115063639">Nothing Can Sadden Us</a>. Пример в А, мы разобрали в G</li>
         <li><a href="https://www.youtube.com/watch?v=wlMbgvoMO1A">Bill Harte's</a></li>
         <li><a href="https://www.youtube.com/watch?v=EfN0tPf5a2g">Fraher's</a></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=4n5qZR7vMwQ">Out On The Ocean</a></ins></li>
     </ul>
     <h3 class="tunes__heading">Слип-джиги</h3>
     <ul class="tunes__list">
         <li><a href="https://www.youtube.com/watch?v=QaKLgSXTYBM">Land's end</a></li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=_YTY0GZynsA">Redican’s Mother</a>. По ссылке это Fisherman's lilt, мы разобрали в D</ins></li>
+        <li><a href="https://www.youtube.com/watch?v=_YTY0GZynsA">Redican’s Mother</a>. По ссылке это Fisherman's lilt, мы разобрали в D</li>
     </ul>
     <h3 class="tunes__heading">Польки</h3>
     <ul class="tunes__list">
