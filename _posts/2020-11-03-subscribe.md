@@ -2,7 +2,7 @@
 layout: text
 title:  "Подписка на обновления"
 category: news
-past: false
+past: true
 ---
 
 ## Подписка на обновления
