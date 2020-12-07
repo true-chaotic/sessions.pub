@@ -2,7 +2,7 @@
 layout: text
 title:  "Zoom-сейшны John Whelan"
 category: news
-past: false
+past: true
 ---
 
 John Whelan проводит [slow](http://johnwhelanmusic.com/slow-session/)-сейшны,
