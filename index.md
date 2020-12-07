@@ -20,6 +20,7 @@ layout: default
             <li class="cards__item">
                 <div class="card">
                     <div class="card__plain-text">
+                        <h2>{{ post.title }}</h2>
                         {{ post.content }}
                     </div>
                 </div>
