@@ -38,6 +38,7 @@ title: "Zoom-сейшны"
         <li><a href="https://www.youtube.com/watch?v=EfN0tPf5a2g">Fraher's</a></li>
         <li><a href="https://www.youtube.com/watch?v=4n5qZR7vMwQ">Out On The Ocean</a></li>
         <li><a href="https://www.youtube.com/watch?v=lEUbhD1D9Eo&t=3m4s">Up In The Air</a></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=pu8boOhW6fM">Jimmy Ward’s</a></ins></li>
     </ul>
     <h3 class="tunes__heading">Слип-джиги</h3>
     <ul class="tunes__list">
@@ -59,7 +60,7 @@ title: "Zoom-сейшны"
     <ul class="tunes__list">
         <li><a href="https://youtu.be/Y6OAJ82qS2k?t=83">Peacock's Feather</a></li>
         <li><a href="https://www.youtube.com/watch?v=pPDM-2seKpA&t=8s">Mrs Dwyer’s</a> (см. также <a href="https://www.youtube.com/watch?v=_JS4Y1ZGO7Q">версию The Gloaming</a>)</li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://youtu.be/3i2qBlVOdwE">Sonny Murray’s</a></ins></li>
+        <li><a href="https://youtu.be/3i2qBlVOdwE">Sonny Murray’s</a></li>
     </ul>
     <h3 class="tunes__heading">Вальсы</h3>
     <ul class="tunes__list">
