@@ -38,7 +38,7 @@ title: "Zoom-сейшны"
         <li><a href="https://www.youtube.com/watch?v=EfN0tPf5a2g">Fraher's</a></li>
         <li><a href="https://www.youtube.com/watch?v=4n5qZR7vMwQ">Out On The Ocean</a></li>
         <li><a href="https://www.youtube.com/watch?v=lEUbhD1D9Eo&t=3m4s">Up In The Air</a></li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=pu8boOhW6fM">Jimmy Ward’s</a></ins></li>
+        <li><a href="https://www.youtube.com/watch?v=pu8boOhW6fM">Jimmy Ward’s</a></li>
     </ul>
     <h3 class="tunes__heading">Слип-джиги</h3>
     <ul class="tunes__list">
@@ -49,6 +49,7 @@ title: "Zoom-сейшны"
     <ul class="tunes__list">
         <li><a href="https://www.youtube.com/watch?v=K2jmvHSxsJM">The P&O</a></li>
         <li><a href="https://www.youtube.com/watch?v=jOZWHqVuJ-4&t=2m">Connie In The Pool / The Gortnatubrid</a></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://youtu.be/I03EtvbmauY">The Upperchurch</a></ins></li>
         <li>Forde's</li>
     </ul>
     <h3 class="tunes__heading">Страспеи</h3>
