@@ -50,7 +50,7 @@ title: "Zoom-сейшны"
         <li><a href="https://www.youtube.com/watch?v=K2jmvHSxsJM">The P&O</a></li>
         <li><a href="https://www.youtube.com/watch?v=jOZWHqVuJ-4&t=2m">Connie In The Pool / The Gortnatubrid</a></li>
         <li><a href="https://youtu.be/I03EtvbmauY">The Upperchurch</a></li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=WqAVIKiaP3k">Farewell To Whiskey</a></ins></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=WqAVIKiaP3k">Farewell To Whiskey / Dark Girl Dressed In Blue</a></ins></li>
         <li>Forde's</li>
     </ul>
     <h3 class="tunes__heading">Страспеи</h3>
