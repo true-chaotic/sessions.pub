@@ -50,7 +50,7 @@ title: "Zoom-сейшны"
         <li><a href="https://www.youtube.com/watch?v=K2jmvHSxsJM">The P&O</a></li>
         <li><a href="https://www.youtube.com/watch?v=jOZWHqVuJ-4&t=2m">Connie In The Pool / The Gortnatubrid</a></li>
         <li><a href="https://youtu.be/I03EtvbmauY">The Upperchurch</a></li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=WqAVIKiaP3k">Farewell To Whiskey / Dark Girl Dressed In Blue</a></ins></li>
+        <li><a href="https://www.youtube.com/watch?v=WqAVIKiaP3k">Farewell To Whiskey / Dark Girl Dressed In Blue</a></li>
         <li>Forde's</li>
     </ul>
     <h3 class="tunes__heading">Страспеи</h3>
@@ -69,10 +69,14 @@ title: "Zoom-сейшны"
         <li><a href="https://www.youtube.com/watch?v=wENYW0Ybgjg">Trip to Skye</a></li>
         <li><a href="https://youtu.be/IyeplQqaqn4?t=368">The Munster Cloak</a></li>
     </ul>
+    <h3 class="tunes__heading">Слайды</h3>
+    <ul class="tunes__list">
+        <li><a href="https://www.youtube.com/watch?v=7yl33E60IUM">Paddy Cronin's</a></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=UfjMsl0tdSA">https://www.youtube.com/watch?v=UfjMsl0tdSA</a></ins></li>
+    </ul>
     <h3 class="tunes__heading">А также</h3>
     <ul class="tunes__list">
         <li>Барндансы <a href="https://www.youtube.com/watch?v=m-gWXxJ2itg">If There Weren't Any Woman In The World / Hill Of Tara</a></li>
         <li>Марши <a href="https://www.youtube.com/watch?v=DP52lcGn-6Y">The Pikeman / The Marquis of Huntley's Farewell</a></li>
-        <li>Слайд <a href="https://www.youtube.com/watch?v=7yl33E60IUM">Paddy Cronin's</a></li>
     </ul>
 </div>
