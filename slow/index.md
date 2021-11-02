@@ -72,7 +72,7 @@ title: "Zoom-сейшны"
     <h3 class="tunes__heading">Слайды</h3>
     <ul class="tunes__list">
         <li><a href="https://www.youtube.com/watch?v=7yl33E60IUM">Paddy Cronin's</a></li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=UfjMsl0tdSA">https://www.youtube.com/watch?v=UfjMsl0tdSA</a></ins></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=UfjMsl0tdSA">Palm Sunday</a></ins></li>
     </ul>
     <h3 class="tunes__heading">А также</h3>
     <ul class="tunes__list">
