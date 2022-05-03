@@ -38,6 +38,5 @@ jobs:
       - name: Run a one-line script
         run: node scripts/add-zoom-session.js ${{ github.event.inputs.slug }} ${{ github.event.inputs.date }} ${{ github.event.inputs.time }}
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: ls -la _posts
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
