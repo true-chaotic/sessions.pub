@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  add_post:
+  mark_past:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,3 +20,5 @@ jobs:
 
       - name: Commit and push
         uses: EndBug/add-and-commit@v9
+        with:
+          message: 'set past sessions as past'
