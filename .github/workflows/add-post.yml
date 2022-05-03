@@ -13,7 +13,7 @@ on:
       date:
         description: 'Year'
         required: true
-        default: '2021-05-03'
+        default: '2022-05-03'
       time:
         description: 'Slug'
         required: true
