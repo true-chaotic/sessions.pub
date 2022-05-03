@@ -1,0 +1,22 @@
+name: Mark past sessions
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add_post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{secrets.MY_TOKEN}}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Run a one-line script
+        run: node scripts/mark-past-sessions.js
+
+      - name: Commit and push
+        uses: EndBug/add-and-commit@v9
