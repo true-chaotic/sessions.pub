@@ -4,15 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Slug'
+        description: 'Slug to use in post link'
         required: true
         default: 'zoom'
       date:
-        description: 'Year'
+        description: 'Year, e.g. 2022-05-03'
         required: true
         default: '2022-05-03'
       time:
-        description: 'Slug'
+        description: 'Time, e.g. 17:00'
         required: true
         default: '17:00'
 
