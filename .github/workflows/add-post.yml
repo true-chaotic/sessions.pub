@@ -30,6 +30,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          token: ${{secrets.MY_TOKEN}}
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
@@ -37,3 +39,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: node scripts/add-zoom-session.js ${{ github.event.inputs.slug }} ${{ github.event.inputs.date }} ${{ github.event.inputs.time }}
+
+      - name: Commit and push
+        uses: EndBug/add-and-commit@v9
