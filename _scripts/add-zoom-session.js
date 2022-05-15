@@ -6,7 +6,7 @@ const [ slug, date, time ] = process.argv.slice(2);
 const args = {date, slug, time};
 
 function showExample() {
-    console.error("Example: node scripts/add-zoom-session.js zoom 2022-05-03 17:00");
+    console.error("Example: node _scripts/add-zoom-session.js zoom 2022-05-03 17:00");
 }
 
 Object.entries(args).forEach(function([key, value]) {

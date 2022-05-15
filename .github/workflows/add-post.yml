@@ -29,7 +29,7 @@ jobs:
           node-version: '14'
 
       - name: Run a one-line script
-        run: node scripts/add-zoom-session.js ${{ github.event.inputs.slug }} ${{ github.event.inputs.date }} ${{ github.event.inputs.time }}
+        run: node _scripts/add-zoom-session.js ${{ github.event.inputs.slug }} ${{ github.event.inputs.date }} ${{ github.event.inputs.time }}
 
       - name: Commit and push
         uses: EndBug/add-and-commit@v9
