@@ -4,13 +4,13 @@ Built using Jekyll, published on Github Pages
 
 ## Available GitHub workflows and necessary secrets
 
-### Add post (`add-post.yml`)
+### Add post ([`add-post.yml`](.github/workflows/add-post.yml))
 
 Creates a new zoom-session post for a date. 
 
 Needs `MY_TOKEN` secret with your personal access token to commit and push the result back to repository. Updates commited without your token will not trigger pages build.
 
-### Mark past sessions (`mark-past.yml`)
+### Mark past sessions ([`mark-past.yml`](.github/workflows/mark-past.yml))
 
 Marks session posts with session date that is before the script run time as `past: true`
 
@@ -18,7 +18,7 @@ Needs `MY_TOKEN` secret to commit and push the result back to repository.
 
 If no posts are marked, nothing is commited.
 
-### Send telegram notifications
+### Send telegram notifications ([`telegram-notify.yml`](.github/workflows/telegram-notify.yml))
 
 Runs after GitHub Pages build.
 
@@ -28,7 +28,7 @@ Needs
 
  * `NOTIFY_ARTIFACT_NAME` — secret to name the file. Can be something like `artifact.json` (should be a json file)
  * `NOTIFY_CHAT_ID` — for a chat to send notifications to. Right now set to `@sessions_pub`, you can set your own. For a private chat it will be numerical id, you will need a special bot to get your private chat id.
- * `NOTIFY_TOKEN` — your bot token (you should get it from `@BotFather`
+ * `NOTIFY_TOKEN` — your bot token (you should get it from `@BotFather`)
 
 ## Automated site flow
 
