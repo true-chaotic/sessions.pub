@@ -6,9 +6,9 @@ on:
       init:
         description: 'Fresh start (recreate artifact)'
         type: boolean
-        default: false
+        default: true
   workflow_run:
-    workflows: [pages build and deployment]
+    workflows: [pages-build-deployment]
     types:
       - completed      
 
