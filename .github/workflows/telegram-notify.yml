@@ -12,7 +12,7 @@ on:
         default: false
 
 jobs:
-  mark_past:
+  telegram_notify:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,4 +22,4 @@ jobs:
           node-version: '18'
 
       - name: Run a one-line script
-        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }} artifactName=${{ github.event.inputs.artifactName }}
+        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }} artifactName=${{ github.event.inputs.artifactName }} token=${{secrets.NOTIFY_TOKEN}} chat_id=${{secrets.NOTIFY_CHAT_ID}}
