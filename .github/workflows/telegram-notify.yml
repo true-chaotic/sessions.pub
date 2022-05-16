@@ -24,3 +24,7 @@ jobs:
 
       - name: Run a one-line script
         run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init || true }} artifactName=${{ secrets.NOTIFY_ARTIFACT_NAME }} token=${{secrets.NOTIFY_TOKEN}} chat_id=${{secrets.NOTIFY_CHAT_ID}}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: notifications-log
+          path: ${{ secrets.NOTIFY_ARTIFACT_NAME }}
