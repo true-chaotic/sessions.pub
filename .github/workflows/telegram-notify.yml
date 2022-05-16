@@ -3,8 +3,11 @@ name: Send telegram notifications
 on:
   workflow_dispatch:
     inputs:
+      artifactName:
+        description: 'Previous notifications json artifact, e.g. artifact.json'
+        required: true
       init:
-        description: 'Slug to use in post link'
+        description: 'Fresh start (recreate artifact)'
         type: boolean
         default: false
 
@@ -19,4 +22,4 @@ jobs:
           node-version: '18'
 
       - name: Run a one-line script
-        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }}
+        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }} artifactName=${{ github.event.inputs.artifactName }}
