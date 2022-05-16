@@ -3,13 +3,14 @@ name: Send telegram notifications
 on:
   workflow_dispatch:
     inputs:
-      artifactName:
-        description: 'Previous notifications json artifact, e.g. artifact.json'
-        required: true
       init:
         description: 'Fresh start (recreate artifact)'
         type: boolean
         default: false
+  workflow_run:
+    workflows: [pages build and deployment]
+    types:
+      - completed      
 
 jobs:
   telegram_notify:
@@ -22,4 +23,4 @@ jobs:
           node-version: '18'
 
       - name: Run a one-line script
-        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }} artifactName=${{ github.event.inputs.artifactName }} token=${{secrets.NOTIFY_TOKEN}} chat_id=${{secrets.NOTIFY_CHAT_ID}}
+        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }} artifactName=${{ secrets.NOTIFY_ARTIFACT_NAME }} token=${{secrets.NOTIFY_TOKEN}} chat_id=${{secrets.NOTIFY_CHAT_ID}}
