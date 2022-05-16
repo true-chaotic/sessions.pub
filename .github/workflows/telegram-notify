@@ -1,0 +1,22 @@
+name: Send telegram notifications
+
+on:
+  workflow_dispatch:
+    inputs:
+      init:
+        description: 'Slug to use in post link'
+        type: boolean
+        default: false
+
+jobs:
+  mark_past:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Run a one-line script
+        run: node _scripts/notify-about-new.js init=${{ github.event.inputs.init }}
