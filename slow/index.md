@@ -39,11 +39,12 @@ title: "Zoom-сейшны"
         <li><a href="https://www.youtube.com/watch?v=4n5qZR7vMwQ">Out On The Ocean</a></li>
         <li><a href="https://www.youtube.com/watch?v=lEUbhD1D9Eo&t=3m4s">Up In The Air</a></li>
         <li><a href="https://www.youtube.com/watch?v=pu8boOhW6fM">Jimmy Ward’s</a></li>
+        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=y19Gf_cNWBA">Brendan Tonra's</a></ins></li>
     </ul>
     <h3 class="tunes__heading">Слип-джиги</h3>
     <ul class="tunes__list">
         <li><a href="https://www.youtube.com/watch?v=QaKLgSXTYBM">Land's end</a></li>
-        <li><a href="https://www.youtube.com/watch?v=_YTY0GZynsA">Redican’s Mother</a>. По ссылке это Fisherman's lilt, мы разобрали в D</li>
+        <li>Redican’s Mother</li>
     </ul>
     <h3 class="tunes__heading">Польки</h3>
     <ul class="tunes__list">
@@ -73,7 +74,7 @@ title: "Zoom-сейшны"
     <ul class="tunes__list">
         <li><a href="https://www.youtube.com/watch?v=7yl33E60IUM">Paddy Cronin's</a></li>
         <li><a href="https://www.youtube.com/watch?v=UfjMsl0tdSA">Palm Sunday</a></li>
-        <li><ins title="Разобрали в прошлый раз" class="tunes__new"><a href="https://www.youtube.com/watch?v=YXxTHzkYWjM">Dancing With Ma Leary</a></ins></li>
+        <li><a href="https://www.youtube.com/watch?v=YXxTHzkYWjM">Dancing With Ma Leary</a></li>
         <li><a href="https://www.youtube.com/watch?v=rAeEBFaZ7tE">Patsy Geary's</a></li>
     </ul>
     <h3 class="tunes__heading">А также</h3>
