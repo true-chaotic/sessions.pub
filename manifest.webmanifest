@@ -1,0 +1,10 @@
+{
+  "name": "Ирландский сейшн в Москве",
+  "theme_color": "#064940",
+  "background_color": "#064940",
+  "lang": "ru",
+  "icons": [
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
