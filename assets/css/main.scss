@@ -1,4 +1,368 @@
 ---
 ---
 
-@import "main";
+@import "normalize";
+
+$green-dark: #064940;
+$green-light: #3cab3d;
+$white: #fff;
+$orange: #f69901;
+
+$background: $green-dark;
+$text: $white;
+$link-hover: $orange;
+
+@mixin link {
+  color: $text; /* Links are always underlined, so we can color them as text */
+  text-decoration: underline;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html {
+  min-height: 100%;
+}
+
+.layout {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: radial-gradient(circle at 52% 50%, #0c7264, $background 92%);
+  background-repeat: no-repeat;
+  background-color: $background;
+  color: $text;
+  font-weight: bold;
+  padding: 2em 1.6em;
+  min-height: 100%;
+
+  &__header {
+    width: 204px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    margin-top: 2.25em;
+  }
+
+  &__text {
+    max-width: 35em;
+    margin: 0 auto 8em;
+    font-weight: normal;
+  }
+
+  &__footer {
+    margin-top: 5em;
+  }
+}
+
+.logo {
+  width: 204px;
+  height: 60px;
+  margin: 0;
+  background-image: url(../i/logo.svg);
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.cards {
+  text-align: center;
+  margin: 0 -0.6em;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 320px;
+    text-align: initial;
+    margin: 0 0.6em 1em;
+  }
+}
+
+.card {
+  text-align: center;
+  border-radius: 9px;
+  box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  color: #037161;
+  padding: 1.56em;
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__plain-text {
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: normal;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    a {
+      color: inherit;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &__when {
+    display: block;
+    margin-top: 0.1875em;
+  }
+
+  &__date {
+    color: #f69901;
+  }
+
+  &__day {
+    display: block;
+    font-size: 5.625em;
+  }
+
+  &__month {
+    display: block;
+    font-size: 2.6875em;
+    margin-top: -0.5em;
+  }
+
+  &__at-time {
+    display: block;
+    font-size: 1.25em;
+    margin: 0.3em 0;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  &__punctuation, &__at {
+    display: none;
+  }
+
+  &__time::before {
+    content: '/ ';
+  }
+
+  &__closest {
+    display: block;
+    color: $green-light;
+
+    &::after {
+      content: ':';
+    }
+  }
+
+  &__past {
+    display: block;
+    color: #666666;
+  }
+
+  &__where {
+    margin-top: 1.25em;
+    display: block;
+  }
+
+  &__place {
+    display: block;
+    font-size: 1.75em;
+  }
+
+  &__address {
+    margin-top: 0.2em;
+    display: block;
+    font-size: 1.25em;
+    font-weight: normal;
+
+    &-link {
+      color: inherit;
+      transition: color 0.2s;
+
+      &_tg::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        background-image: url(../i/telegram.svg);
+        background-size: cover;
+        vertical-align: middle;
+        margin: 1px 3px 3px;
+      }
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  &__unavailable-text {
+    background-image: url(../i/triskelion.svg);
+    background-size: 96px 96px;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+
+    margin: 0;
+    padding-top: 8em;
+    padding-bottom: 3em;
+    font-size: 1.25em;
+    line-height: 1.1;
+
+    &_with-note {
+      padding-bottom: 1em;
+    }
+  }
+
+  &_unavailable {
+    color: #9b9b9b;
+  }
+
+  &__enter {
+    margin: 1.5em 0 1em;
+
+    &-button {
+      display: inline-block;
+      border-radius: 9px;
+      color: white;
+      text-decoration: none;
+      background-image: linear-gradient(#0c7264, #064940);
+      background-color: #064940;
+      padding: 1em;
+      box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.5), inset 0 2px 3px 0 rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &__notes {
+    margin-top: 2em;
+    font-size: 0.8em;
+
+    &_plain {
+      text-align: left;
+      font-size: 0.9em;
+    }
+  }
+
+  &__note {
+    font-weight: normal;
+  }
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.contact {
+  font-style: normal;
+  text-align: center;
+
+  &__label {
+    font-size: 1.125em;
+    margin: 0.5em 0;
+    display: inline-block;
+  }
+
+  &__methods,
+  &__method {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  &__methods {
+    margin: 0 2em 0 1em;
+  }
+
+  &__method {
+    margin: 0.5em 1em;
+  }
+
+  &__name {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0.25em;
+
+    &_tg {
+      background-image: url(../i/telegram.svg);
+    }
+
+    &_email {
+      background-image: url(../i/mail.svg);
+    }
+  }
+
+  @media (max-width: 350px) {
+    &__methods {
+      margin: 0;
+    }
+
+    &__name {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__suggest {
+    margin-top: 2em;
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+  &__link {
+    @include link;
+  }
+}
+
+.text {
+  a {
+    @include link;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 2em;
+  }
+
+  li {
+    margin: 0.5em 0;
+  }
+
+  &__hint {
+    font-size: 0.8em;
+  }
+}
+
+.tunes {
+  &__heading {
+    margin-bottom: 0.5em;
+  }
+
+  &__list {
+    margin-top: 0;
+  }
+
+  &__new {
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '+';
+      font-family: monospace;
+      margin-left: -1.2em;
+      margin-top: 0.2em;
+    }
+  }
+}
